@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | Safeguard Your Health</title>
+    <link rel="stylesheet" href="/static/CSS/style.css">
+    <link rel="icon" href="/static/favicon.png" type="image/x-icon">
+    <!-- font Awesome for icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!-- Header Section -->
+    <section>
+        <header id="myNavbar">
+            <div class="logo" style="color: #4a4343;">DP System</div>
+            <ul class="menu">
+                <li><a href="{{ url_for('index')}}" style="color: #4a4343;">Home</a></li>
+                <li><a href="{{ url_for('about')}}" style="color: #4a4343;">About</a></li>
+                <li><a href="#" style="color: #4a4343;">Services</a></li>
+                <li><a href="#" style="color: #4a4343;">Contact</a></li>
+            </ul>
+            <div class="search">
+                <ul class="menu">
+                    <li><a href="{{ url_for('login')}}" style="color: #4a4343;">Register</a></li>
+                    <li><a href="{{ url_for('login')}}" style="color: #4a4343;">Login</a></li>
+                </ul>
+            </div>
+        </header>
+    </section>
+    <div class="carousel1">
+        <img src="/static/image/banner/2.png" alt="banner1">
+    </div>
+
+    <!-- Step for Checkup Section -->
+    <section class="aboutdetails">
+        <div class="checkup-details">
+            <h1>About Us <div
+                    style="height: 4px; width: 77px; background-color: red; border-radius: 2px; margin-top: 5px;"></div>
+            </h1>
+            <p class="description">The "Disease Prediction System" project represents a pioneering effort in
+                leveraging ML techniques to address the challenges of disease prediction and diagnosis in modern
+                healthcare. Through interdisciplinary collaboration and innovation,
+                this project aims to pave the way for more effective and personalized healthcare solutions that can
+                positively impact individuals, healthcare providers, and healthcare systems as a whole.
+                In today's healthcare, predicting diseases accurately and quickly is crucial for better treatment
+                outcomes. Our project, "Disease Prediction System," focuses on using machine learning (ML) to create
+                a system that can predict the chances of
+                getting several diseases based on different factors Traditional diagnosis methods can sometimes be
+                subjective and prone to mistakes. With our project, we aim
+                to use advanced ML techniques to analyze various types of information, like medical history,
+                lifestyle, and genetics, to predict the likelihood of someone getting specific diseases.
+                Our goal is to develop a system that can predict diseases at once, considering how different health
+                issues
+                can be connected. By using ML algorithms that are good at handling lots of data, we hope to give
+                healthcare
+                professionals useful insights into which diseases someone might be at risk of developing.
+                This project is important because it could lead to earlier detection of diseases, personalized risk
+                assessments, and better-targeted treatments. By giving doctors better tools for prediction, we hope
+                to improve healthcare and people's lives.
+            </p>
+        </div>
+        <img src="/static/image/about bg.png">
+    </section>
+
+
+    <footer>
+        <div class="footer-container">
+            <!--**comoany-box**-->
+            <div class="footer-company-box">
+                <!--logo-->
+                <a href="#" class="logo"><span>DP</span> System</a>
+                <!--details-->
+                <p>DP System provide all the facilites related to HealthCare. As well as give the all support which is
+                    required a patient.</p>
+                <!--social-box-->
+                <div class="footer-social">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+            <!--**link-box***-->
+            <div class="footer-link-box">
+                <strong>Main Link's</strong>
+                <ul>
+                    <li><a href="{{ url_for('index')}}">Home</a></li>
+                    <li><a href="{{ url_for('about')}}">About</a></li>
+                    <li><a href="contact.html">Services</a></li>
+                    <li><a href="Services.html">Contact us</a></li>
+                </ul>
+            </div>
+            <!--**link-box***-->
+            <div class="footer-link-box">
+                <strong>Quick Link's</strong>
+                <ul>
+                    <li><a href="#">Get Medicine's</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <!-- <li><a href="#">Disclaimer</a></li> -->
+                    <li><a href="#">Trem's and Condition's</a></li>
+                </ul>
+            </div>
+            <!--**link-box***-->
+            <div class="footer-link-box">
+                <strong>External Link's</strong>
+                <ul>
+                    <li><a href="#">Neurology Services</a></li>
+                    <li><a href="#">Cardiology Service</a></li>
+                    <li><a href="#">X-ray & RIM Services</a></li>
+                    <li><a href="#">Orthopaedics Services</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!--**bottom**********************-->
+        <div class="footer-bottom">
+            <span class="footer-owner">Made By DeveloperArya</span>
+            <span class="copyright">&#169; Copyright 2022 - DP System</span>
+        </div>
+    </footer>
+
+    <script src="/static/js/app.js"></script>
+</body>
+
+</html>
