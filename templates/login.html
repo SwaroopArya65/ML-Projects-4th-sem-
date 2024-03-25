@@ -24,31 +24,40 @@
         <div class="login-box1">
             <h1>Login Account</h1>
             <form action="#">
-                <div><button>Register</button></div>
-                <div><button>Login</button></div>
+                <div><button id="registerBtn" onclick="showRegistrationForm()">Register</button></div>
+                <div><button id="loginBtn" onclick="showLoginForm()">Login</button></div>
             </form>
             <!-- Register form -->
             <section class="register-form">
+                <!-- id="registrationForm" style="display: none;" -->
                 <form action="#">
-                    <label for="#">Full Name</label>
-                    <input type="text" placeholder="Enter Full Name">
-                    <label for="#">E-mail ID</label>
-                    <input type="email" placeholder="Enter E-mail Id">
-                    <label for="#">New Password</label>
-                    <input type="password" placeholder="Enter new password">
-
+                    <div>
+                        <!-- <label for="#">Full Name</label> -->
+                        <input type="text" placeholder="Enter Full Name">
+                    </div>
+                    <div>
+                        <!-- <label for="#">E-mail ID</label> -->
+                        <input type="email" placeholder="Enter E-mail Id">
+                    </div>
+                    <div>
+                        <!-- <label for="#">New Password</label> -->
+                        <input type="password" placeholder="Enter new password">
+                    </div>
                     <button>Creat Account</button>
                 </form>
             </section>
 
             <!-- Login form -->
-            <!-- <section class="login-form">
+            <!-- <section class="login-form" id="loginForm" style="display: none;">
                 <form action="#">
-                    <label for="#">E-mail ID</label>
-                    <input type="email" placeholder="Enter E-mail Id">
-                    <label for="#">New Password</label>
-                    <input type="password" placeholder="Enter new password">
-
+                    <div>
+                        <label for="#">E-mail ID</label>
+                        <input type="email" placeholder="Enter E-mail Id">
+                    </div>
+                    <div>
+                        <label for="#">Password</label>
+                        <input type="password" placeholder="Enter Password">
+                    </div>
                     <button>Login</button>
                 </form>
             </section> -->
@@ -60,6 +69,7 @@
 
     </section>
 
+    <script src="/static/js/login.js"></script>
 </body>
 
 </html>

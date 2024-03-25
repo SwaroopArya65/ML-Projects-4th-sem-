@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>School managment || Admin Panel</title>
+    <link rel="shortcut icon" href="img/school-favicon.png">
+    <link rel="stylesheet" type="text/css" href="/static/CSS/dashboard.css">
+    <!-- Boxicons CSS -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="desgin">
+    <div class="sidebar">
+        <div class="logo-details">
+            <i class='bx bxs-dashboard'></i>
+            <span class="logo_name">DP System</span>
+        </div>
+        <ul class="nav-links">
+            <li>
+                <a href="#" style="background: #8b98a9">
+                    <i class='bx bxs-grid-alt'></i>
+                    <span class="link_name">Dashboard</span>
+                </a>
+                <ul class="sub-menu blank">
+                    <li><a href="#" class="link_name">School Profile</a></li>
+                </ul>
+            </li>
+            <li>
+                <div class="icon-link">
+                    <a href="#">
+                        <i class='bx bxs-user-account'></i>
+                        <span class="link_name">User Profile</span>
+                    </a>
+                    <!-- <i class='bx bx-chevron-down arrow'></i> -->
+                </div>
+                <ul class="sub-menu">
+                    <li><a href="profile.jsp" class="link_name">Profile</a></li>
+                    <li><a href="../index.jsp" class="link_name">Visit Website</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="inquiry.jsp">
+                    <i class='bx bxs-bullseye'></i>
+                    <span class="link_name">Eye Checkup</span>
+                </a>
+                <ul class="sub-menu blank">
+                    <li><a href="#" class="link_name">Analytics</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="inquiry.jsp">
+                    <i class='bx bxs-heart'></i>
+                    <span class="link_name">Heart Checkup</span>
+                </a>
+                <ul class="sub-menu blank">
+                    <li><a href="#" class="link_name">Analytics</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="inquiry.jsp">
+                    <i class='bx bx-phone-call'></i>
+                    <span class="link_name">Liver Checkup</span>
+                </a>
+                <ul class="sub-menu blank">
+                    <li><a href="#" class="link_name">Analytics</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="inquiry.jsp">
+                    <i class='bx bx-phone-call'></i>
+                    <span class="link_name">Diabetes Checkup</span>
+                </a>
+                <ul class="sub-menu blank">
+                    <li><a href="#" class="link_name">Analytics</a></li>
+                </ul>
+            </li>
+            <li>
+                <div class="icon-link">
+                    <a href="#">
+                        <i class='bx bxs-user'></i>
+                        <span class="link_name">Students</span>
+                    </a>
+                    <i class='bx bx-chevron-down arrow'></i>
+                </div>
+                <ul class="sub-menu">
+                    <li><a href="conferm.jsp" class="link_name">Registration</a></li>
+                    <li><a href="studentlist.jsp" class="link_name">Student List</a></li>
+                    <li><a href="#" class="link_name">Student view</a></li>
+                    <li><a href="studentadd.jsp" class="link_name">Student Add</a></li>
+                    <li><a href="#" class="link_name">Transfer Student</a></li>
+                    <li><a href="#" class="link_name">Student Edit</a></li>
+                </ul>
+            </li>
+            <li>
+                <form method="post" action="action.jsp">
+                    <div class="profile-details">
+                        <div class="profile-content">
+                            <img src="/static/favicon.png" alt="profile-img">
+                        </div>
+
+                        <div class="user-degination">
+                            <div class="user-name">Arya Swar.</div>
+                            <div class="user-job">User Account</div>
+                        </div>
+                        <button name="btn" value="logout" style="border: none; background: #8b98a9;"><i
+                                class='bx bx-log-out'></i></button>
+                    </div>
+                </form>
+            </li>
+        </ul>
+    </div>
+
+    <div class="maincontent">
+        <section class="home-section">
+            <div class="home-content">
+                <i class='bx bx-menu-alt-left'></i>
+                <!-- <span class="text">
+				Sidebar Dashboard 
+			</span> -->
+                <div class="profile">
+                    <div class="profilecontent">
+                        <img src="/static/favicon.png" alt="profile-img">
+                        <div class="user-degination">
+                            <div class="user-name">Arya Swaroop</div>
+                            <div class="user-job">User Account</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h1>gello</h1>
+        </section>
+    </div>
+
+    <script type="text/javascript" src="/static/js/myscript.js"></script>
+</body>
+
+</html>
