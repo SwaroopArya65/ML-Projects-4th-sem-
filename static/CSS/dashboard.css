@@ -1065,3 +1065,13 @@ header:hover,
     background: #e8e8e8;
     padding: 10px;
 }
+
+.maincontent .Diabetes1 {
+    margin: 0px 20px;
+}
+
+.maincontent .home-section h1 {
+    margin: 11px -10px 0px 0px;
+    font-size: 30px;
+    font-family: serif;
+}

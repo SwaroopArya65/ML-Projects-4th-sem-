@@ -3,9 +3,10 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>School managment || Admin Panel</title>
-    <link rel="shortcut icon" href="img/school-favicon.png">
+    <title>DP System || Dashboard</title>
+    <link rel="shortcut icon" href="/static/favicon.png">
     <link rel="stylesheet" type="text/css" href="/static/CSS/dashboard.css">
+    <link rel="stylesheet" type="text/css" href="/static/CSS/form.css">
     <!-- Boxicons CSS -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -54,7 +55,7 @@
             <li>
                 <a href="inquiry.jsp">
                     <i class='bx bxs-heart'></i>
-                    <span class="link_name">Heart Checkup</span>
+                    <span class="link_name" onclick="showForm('heart')">Heart Checkup</span>
                 </a>
                 <ul class="sub-menu blank">
                     <li><a href="#" class="link_name">Analytics</a></li>
@@ -131,7 +132,126 @@
                     </div>
                 </div>
             </div>
-            <h1>gello</h1>
+            <!-- Disease form goes here -->
+            <section class="Diabetes1">
+                <!-- <h1>Eye Checkup</h1> -->
+                <div class="form-container"
+                    style="margin-top: 10px; background: white; height: auto; border-radius: 5px;">
+                    <div class="container1">
+                        <div
+                            style="display: flex; justify-content: space-between; align-items: center; text-align: center; padding: 14px 0px 0px 0px;">
+                            <h1 style="font-weight: 600; font-family: serif; color: #11101d;">Eye Checkup</h1>
+                            <h1><i class="fas fa-ellipsis-v"></i></h1>
+                        </div>
+                        <form action="action2.jsp" method="post" enctype="multipart/form-data">
+                            <div class="form first">
+                                <div class="details ID">
+                                    <div class="fields">
+                                        <div class="input-field">
+                                            <label>Name</label>
+                                            <input type="text" placeholder="Enter your full name" name="fullname"
+                                                required>
+                                        </div>
+
+                                        <div class="input-field">
+                                            <label>Father Name</label>
+                                            <input type="text" placeholder="Enter Father name" name="fathername"
+                                                required>
+                                        </div>
+
+                                        <div class="input-field">
+                                            <label>Mother Name</label>
+                                            <input type="text" placeholder="Enter Mother name" name="mothername"
+                                                required>
+                                        </div>
+
+                                        <div class="input-field">
+                                            <label>Section</label>
+                                            <input type="text" placeholder="Enter section Example A" name="section"
+                                                required>
+                                        </div>
+
+                                        <div class="input-field">
+                                            <label>Gargin Mobile Number</label>
+                                            <input type="number" placeholder="Enter Gargin Mobile Number" name="gmobile"
+                                                required>
+                                        </div>
+
+                                        <div class="input-field">
+                                            <label>Aaddhar Number</label>
+                                            <input type="number" placeholder="Enter Valid Aaddhar Number" name="aadhar"
+                                                required>
+                                        </div>
+                                        <div class="input-field">
+                                            <label>Account Number</label>
+                                            <input type="number" placeholder="Enter Valid Account Number"
+                                                name="accountnumber" required>
+                                        </div>
+
+                                        <div class="input-field">
+                                            <label>Bank Name</label>
+                                            <input type="text" placeholder="Enter Bank name" name="bankname" required>
+                                        </div>
+
+                                        <div class="input-field">
+                                            <label>Bank Holder Name</label>
+                                            <input type="text" placeholder="Enter bank Holder name" name="bankhname"
+                                                required>
+                                        </div>
+
+                                        <div class="input-field">
+                                            <label>Date Of Birth</label>
+                                            <input type="date" placeholder="Enter Date Of Birth" name="dob" required>
+                                        </div>
+
+                                        <div class="input-field">
+                                            <label>Gender</label>
+                                            <select required name="gender">
+                                                <option disabled selected>Select gender</option>
+                                                <option>Male</option>
+                                                <option>Female</option>
+                                                <option>Others</option>
+                                            </select>
+                                        </div>
+
+                                        <div class="input-field">
+                                            <label>Cetgory</label>
+                                            <select required name="cetgory">
+                                                <option disabled selected>Select gender</option>
+                                                <option>SC/ST</option>
+                                                <option>General</option>
+                                                <option>OBC</option>
+                                                <option>Other</option>
+                                            </select>
+                                        </div>
+                                        <div class="input-field">
+                                            <label>Current Photo</label>
+                                            <input type="file" placeholder="Enter ID type" name="studentphoto" required
+                                                style="padding: 10px; cursor: pointer;">
+                                        </div>
+
+                                        <div class="input-field">
+                                            <label>Signatures</label>
+                                            <input type="file" placeholder="Enter ID number" name="studentsignature"
+                                                required style="padding: 10px; cursor: pointer;">
+                                        </div>
+                                        <div class="input-field">
+                                            <label>Parmanent Adaddress</label>
+                                            <input type="text" placeholder="Enter Parmanent Adaddress" name="paddress"
+                                                required>
+                                        </div>
+                                    </div>
+
+                                    <button type="submit" name="btn" value="addstudent">Add Students
+                                        <!-- <span class="btnText">Add Student</span> -->
+                                        <i class="uil uil-navigator"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
         </section>
     </div>
 
