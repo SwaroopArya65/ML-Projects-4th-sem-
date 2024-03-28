@@ -1,0 +1,24 @@
+Prerequest Things
+
+1.) Latest Python 
+2.) IDE (e.g:- PyCham, JupiterNotbook, VsCode etc.)
+3.) Framwork (e.g:- Flask)
+4.) Database (e.g:- MongoDB)
+
+
+SetUp Application
+
+
+Step-1:- Create a new folder and open folder using your faviourt IDE and then creat virtual Enviroment 
+
+	Command is :- pip install virtualenv
+
+Step-2:- After Creating virtual Enviroment then activate it.
+
+	Command is :- activate virtualenv env
+
+Step-3:- After Completed the step-1,2 then install framwork flask
+
+	Command is :- pip install flask
+
+ 
