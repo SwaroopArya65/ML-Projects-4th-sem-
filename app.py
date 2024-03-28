@@ -18,5 +18,13 @@ def dashboard():
 def heart():
     return render_template("heart.html")
 
+@app.route('/eye')
+def eye():
+    return render_template("eye.html")
+
+@app.route('/liver')
+def liver():
+    return render_template("liver.html")
+
 if __name__ == "__main__":
     app.run(debug=True, port=8000)
