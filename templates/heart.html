@@ -126,7 +126,7 @@
                     <div class="container1">
                         <div
                             style="display: flex; justify-content: space-between; align-items: center; text-align: center; padding: 14px 0px 0px 0px;">
-                            <h1 style="font-weight: 600; font-family: serif; color: #11101d;">Diabetes Prediction</h1>
+                            <h1 style="font-weight: 600; font-family: serif; color: #11101d;">Heart Prediction</h1>
                             <h1><i class="fas fa-ellipsis-v"></i></h1>
                         </div>
                         <form action="action2.jsp" method="post" enctype="multipart/form-data">
@@ -134,61 +134,86 @@
                                 <div class="details ID">
                                     <div class="fields">
                                         <div class="input-field">
-                                            <label>Number of Pregnancies</label>
-                                            <input type="text" placeholder="Enter No. of Pregnancies" name="fullname"
+                                            <label>Age</label>
+                                            <input type="text" placeholder="Enter Your Age" name="fullname" required>
+                                        </div>
+
+                                        <div class="input-field">
+                                            <label>Sex</label>
+                                            <input type="text" placeholder="Enter Sex" name="fathername" required>
+                                        </div>
+
+                                        <div class="input-field">
+                                            <label>Chest Pain types</label>
+                                            <input type="text" placeholder="Enter Chest Pain types" name="mothername"
                                                 required>
                                         </div>
 
                                         <div class="input-field">
-                                            <label>Glucose Level</label>
-                                            <input type="text" placeholder="Enter Glucose Level" name="fathername"
+                                            <label>Resting Blood Pressure</label>
+                                            <input type="text" placeholder="Enter Resting Blood Pressure" name="section"
                                                 required>
                                         </div>
 
                                         <div class="input-field">
-                                            <label>Blood Pressure value</label>
-                                            <input type="text" placeholder="Enter Blood Pressure value"
-                                                name="mothername" required>
+                                            <label>Serum Cholestoral in mg/dl</label>
+                                            <input type="number" placeholder="Enter Serum Cholestoral e.g:- mg/dl"
+                                                name="gmobile" required>
                                         </div>
 
                                         <div class="input-field">
-                                            <label>Skin Thickness value</label>
-                                            <input type="text" placeholder="Enter Skin Thickness value" name="section"
+                                            <label>Fasting Blood Sugar > 120mg/dl</label>
+                                            <input type="text" placeholder="Enter Blood Sugar > 120mg/dl" name="aadhar"
+                                                required>
+                                        </div>
+                                        <div class="input-field">
+                                            <label>Resting Electrocardiographic results</label>
+                                            <input type="text" placeholder="Enter Electrocardiographic results"
+                                                name="accountnumber" required>
+                                        </div>
+
+                                        <div class="input-field">
+                                            <label>Maximum Heart Rate achived</label>
+                                            <input type="text" placeholder="Enter Maximum Heart Rate" name="bankname"
                                                 required>
                                         </div>
 
                                         <div class="input-field">
-                                            <label>Age of the Person</label>
-                                            <input type="number" placeholder="Enter Person Age" name="gmobile" required>
+                                            <label>Exercise Induced Angina</label>
+                                            <input type="text" placeholder="Enter Exercise Induced Angina"
+                                                name="bankhname" required>
                                         </div>
 
                                         <div class="input-field">
-                                            <label>Insuline Level</label>
-                                            <input type="text" placeholder="Enter Insuline Level" name="aadhar"
-                                                required>
-                                        </div>
-                                        <div class="input-field">
-                                            <label>BMI value</label>
-                                            <input type="text" placeholder="Enter BMI value" name="accountnumber"
+                                            <label>ST depression induced by exercise</label>
+                                            <input type="text" placeholder="Enter ST depression induced" name="dob"
                                                 required>
                                         </div>
 
                                         <div class="input-field">
-                                            <label>Diabetes Pedigree Function value</label>
-                                            <input type="text" placeholder="Enter Diabetes Pedigree value"
-                                                name="bankname" required>
+                                            <label>Slope of the peak exercise ST segment</label>
+                                            <input type="text" placeholder="Enter Slope of the peak exercise ST segment"
+                                                name="dob" required>
                                         </div>
 
                                         <div class="input-field">
-                                            <label>Age of the Person</label>
-                                            <input type="text" placeholder="Enter Person age" name="bankhname" required>
+                                            <label>Major vessels colored by flourosopy</label>
+                                            <input type="text" placeholder="Enter Major vessels colored by flourosopy"
+                                                name="dob" required>
                                         </div>
-                                        <button type="submit" name="btn" value="addstudent">Submit
-                                            <!-- <span class="btnText">Add Student</span> -->
-                                            <i class="uil uil-navigator"></i>
-                                        </button>
+                                        <div class="input-field">
+                                            <label>Reversable defect</label>
+                                            <input type="text" placeholder="Enter Reversable defect" name="dob"
+                                                required>
+                                        </div>
                                     </div>
+
+                                    <button type="submit" name="btn" value="addstudent">Add Students
+                                        <!-- <span class="btnText">Add Student</span> -->
+                                        <i class="uil uil-navigator"></i>
+                                    </button>
                                 </div>
+                            </div>
                         </form>
                     </div>
                 </div>

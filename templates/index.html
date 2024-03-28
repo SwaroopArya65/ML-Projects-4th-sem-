@@ -19,13 +19,11 @@
         <ul class="menu">
             <li><a href="{{ url_for('index')}}">Home</a></li>
             <li><a href="{{ url_for('about')}}">About</a></li>
-            <li><a href="#">Services</a></li>
             <li><a href="#">Contact</a></li>
         </ul>
         <div class="search">
             <ul class="menu">
-                <li><a href="{{ url_for('login')}}">Register</a></li>
-                <li><a href="{{ url_for('login')}}">Login</a></li>
+                <li><a href="{{ url_for('dashboard')}}">Checkup</a></li>
             </ul>
         </div>
     </header>
@@ -48,7 +46,7 @@
                         Parkinson's disease.
                     </div>
                     <div class="buttons">
-                        <button>SEE MORE</button>
+                        <button><a href="https://www.cdc.gov/visionhealth/basics/ced/index.html">SEE MORE</a></button>
                         <button>CHECKUP</button>
                     </div>
                 </div>
@@ -65,7 +63,8 @@
                         epatitis and cirrhosis. It aids in early diagnosis and treatment, reducing public health burden.
                     </div>
                     <div class="buttons">
-                        <button>SEE MORE</button>
+                        <button><a href="https://liverfoundation.org/about-your-liver/how-liver-diseases-progress/">SEE
+                                MORE</a></button>
                         <button>CHECKUP</button>
                     </div>
                 </div>
@@ -82,7 +81,7 @@
                         and arrhythmias, improving outcomes and cutting healthcare costs.
                     </div>
                     <div class="buttons">
-                        <button>SEE MORE</button>
+                        <button><a href="https://www.cdc.gov/heartdisease/about.htm">SEE MORE</a></button>
                         <button>CHECKUP</button>
                     </div>
                 </div>
@@ -99,7 +98,7 @@
                         and personalized treatment planning, leading to better outcomes and improved health.
                     </div>
                     <div class="buttons">
-                        <button>SEE MORE</button>
+                        <button><a href="https://www.cdc.gov/diabetes/basics/index.html">SEE MORE</a></button>
                         <button>CHECKUP</button>
                     </div>
                 </div>
@@ -237,8 +236,8 @@
                 <ul>
                     <li><a href="{{ url_for('index')}}">Home</a></li>
                     <li><a href="{{ url_for('about')}}">About</a></li>
-                    <li><a href="contact.html">Services</a></li>
-                    <li><a href="Services.html">Contact us</a></li>
+                    <li><a href="{{ url_for('dashboard')}}">Checkup</a></li>
+                    <li><a href="#">Contact us</a></li>
                 </ul>
             </div>
             <!--**link-box***-->
@@ -266,7 +265,7 @@
         <!--**bottom**********************-->
         <div class="footer-bottom">
             <span class="footer-owner">Made By DeveloperArya</span>
-            <span class="copyright">&#169; Copyright 2022 - DP System</span>
+            <span class="copyright">&#169; Copyright 2024 - DP System</span>
         </div>
     </footer>
 
