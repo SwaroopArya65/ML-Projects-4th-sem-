@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DP System | Contact</title>
+    <link rel="icon" href="/static/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="/static/CSS/style.css" />
+    <link rel="stylesheet" href="/static/CSS/contact.css" />
+    <!-- font Awesome for icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap');
+    </style>
+</head>
+
+<body>
+    <section>
+        <div class="container">
+            <div class="contactInfo">
+                <div>
+                    <h2>Contact Info</h2>
+                    <ul class="info">
+                        <li>
+                            <span><img src="/static/image/location.png"></span>
+                            <span>Namkum, Jharkhand Ranchi<br>
+                                834010</span>
+                            </span>
+                        </li>
+                        <li>
+                            <span><img src="/static/image/mail.png"></span>
+                            <!-- <span>nassosanagn@gmail.com</span> -->
+                            <span><a href="mailto: nassosanagn@gmail.com">dpsystem@gmail.com</a></span>
+                        </li>
+                        <li>
+                            <span><img src="/static/image/call.png"></span>
+                            <span>702-279-3488</span>
+                        </li>
+
+                    </ul>
+                </div>
+                <ul class="sci">
+                    <li><a href="https://www.facebook.com/nassosanagn/"><img src="/static/image/10.png"></a></li>
+                    <li><a href="https://www.instagram.com/nassosanagn_/?hl=el"><img src="/static/image/30.png"></a>
+                    </li>
+                    <li><a href="https://twitter.com/nassosanagn"><img src="/static/image/24.png"></a></li>
+                    <li><a href="https://www.linkedin.com/in/nassos-anagnostopoulos-2b9631196/"><img
+                                src="/static/image/50.png"></a></li>
+
+                </ul>
+            </div>
+            <div class="contactForm">
+                <h2>Send a Message</h2>
+                <div class="formBox">
+                    <div class="inputBox w50">
+                        <input type="text" name="" required>
+                        <span>First Name</span>
+                    </div>
+                    <div class="inputBox w50">
+                        <input type="text" required>
+                        <span>Last Name</span>
+                    </div>
+                    <div class="inputBox w50">
+                        <input type="email" required>
+                        <span>Email Address</span>
+                    </div>
+                    <div class="inputBox w50">
+                        <input type="text" required>
+                        <span>Mobile Number</span>
+                    </div>
+                    <div class="inputBox w100">
+                        <textarea required></textarea>
+                        <span>Write your message here...</span>
+                    </div>
+                    <div class="inputBox w100">
+                        <input type="submit" value="Send">
+                    </div>
+                </div>
+            </div>
+
+
+
+    </section>
+
+    <!-- Footer Section start -->
+    <footer>
+        <hr>
+        <div class="footer-container">
+            <!--**comoany-box**-->
+            <div class="footer-company-box">
+                <!--logo-->
+                <a href="#" class="logo"><span>DP</span> System</a>
+                <!--details-->
+                <p>DP System provide all the facilites related to HealthCare. As well as give the all support which is
+                    required a patient.</p>
+                <!--social-box-->
+                <div class="footer-social">
+                    <a href="#" style="width: 40px; height: 40px;"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" style="width: 40px; height: 40px;"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" style="width: 40px; height: 40px;"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#" style="width: 40px; height: 40px;"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+            <!--**link-box***-->
+            <div class="footer-link-box">
+                <strong style="margin-left: -40px;">Main Link's</strong>
+                <ul>
+                    <li><a href="{{ url_for('index')}}">Home</a></li>
+                    <li><a href="{{ url_for('about')}}">About</a></li>
+                    <li><a href="{{ url_for('dashboard')}}">Checkup</a></li>
+                    <li><a href="{{ url_for('contact')}}">Contact us</a></li>
+                </ul>
+            </div>
+            <!--**link-box***-->
+            <div class="footer-link-box">
+                <strong style="margin-left: -40px;">Quick Link's</strong>
+                <ul>
+                    <li><a href="#">Get Medicine's</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <!-- <li><a href="#">Disclaimer</a></li> -->
+                    <li><a href="#">Trem's and Condition's</a></li>
+                </ul>
+            </div>
+            <!--**link-box***-->
+            <div class="footer-link-box">
+                <strong style="margin-left: -40px;">External Link's</strong>
+                <ul>
+                    <li><a href="#">Neurology Services</a></li>
+                    <li><a href="#">Cardiology Service</a></li>
+                    <li><a href="#">X-ray & RIM Services</a></li>
+                    <li><a href="#">Orthopaedics Services</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!--**bottom**********************-->
+        <div class="footer-bottom">
+            <span class="footer-owner">Made By DP System</span>
+            <span class="copyright">&#169; Copyright 2024 - DP System</span>
+        </div>
+    </footer>
+</body>
+
+</html>
