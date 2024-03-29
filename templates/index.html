@@ -19,7 +19,7 @@
         <ul class="menu">
             <li><a href="{{ url_for('index')}}">Home</a></li>
             <li><a href="{{ url_for('about')}}">About</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="{{ url_for('contact')}}">Contact</a></li>
         </ul>
         <div class="search">
             <ul class="menu">
@@ -47,7 +47,7 @@
                     </div>
                     <div class="buttons">
                         <button><a href="https://www.cdc.gov/visionhealth/basics/ced/index.html">SEE MORE</a></button>
-                        <button>CHECKUP</button>
+                        <button><a href="{{ url_for('dashboard')}}" style="color: white;">CHECKUP</a></button>
                     </div>
                 </div>
             </div>
@@ -65,7 +65,7 @@
                     <div class="buttons">
                         <button><a href="https://liverfoundation.org/about-your-liver/how-liver-diseases-progress/">SEE
                                 MORE</a></button>
-                        <button>CHECKUP</button>
+                        <button><a href="{{ url_for('dashboard')}}" style="color: white;">CHECKUP</a></button>
                     </div>
                 </div>
             </div>
@@ -82,7 +82,7 @@
                     </div>
                     <div class="buttons">
                         <button><a href="https://www.cdc.gov/heartdisease/about.htm">SEE MORE</a></button>
-                        <button>CHECKUP</button>
+                        <button><a href="{{ url_for('dashboard')}}" style="color: white;">CHECKUP</a></button>
                     </div>
                 </div>
             </div>
@@ -99,7 +99,7 @@
                     </div>
                     <div class="buttons">
                         <button><a href="https://www.cdc.gov/diabetes/basics/index.html">SEE MORE</a></button>
-                        <button>CHECKUP</button>
+                        <button><a href="{{ url_for('dashboard')}}" style="color: white;">CHECKUP</a></button>
                     </div>
                 </div>
             </div>
@@ -202,18 +202,9 @@
         </div>
     </div>
 
-    <!--==Subscribe===========================-->
-    <section id="subscribe">
-        <h3>Subscribe For New Updates</h3>
-        <!--subcribe-box-->
-        <form class="subscribe-box">
-            <input type="email" placeholder="Example@gmail.com">
-            <button>Subscribe</button>
-        </form>
-    </section><!--end-->
-
     <!-- Footer Section start -->
     <footer>
+        <hr>
         <div class="footer-container">
             <!--**comoany-box**-->
             <div class="footer-company-box">
@@ -237,7 +228,7 @@
                     <li><a href="{{ url_for('index')}}">Home</a></li>
                     <li><a href="{{ url_for('about')}}">About</a></li>
                     <li><a href="{{ url_for('dashboard')}}">Checkup</a></li>
-                    <li><a href="#">Contact us</a></li>
+                    <li><a href="{{ url_for('contact')}}">Contact us</a></li>
                 </ul>
             </div>
             <!--**link-box***-->
@@ -264,7 +255,7 @@
 
         <!--**bottom**********************-->
         <div class="footer-bottom">
-            <span class="footer-owner">Made By DeveloperArya</span>
+            <span class="footer-owner">Made By DP System</span>
             <span class="copyright">&#169; Copyright 2024 - DP System</span>
         </div>
     </footer>

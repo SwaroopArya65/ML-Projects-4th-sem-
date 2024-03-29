@@ -21,7 +21,7 @@
             <ul class="menu">
                 <li><a href="{{ url_for('index')}}" style="color: #4a4343;">Home</a></li>
                 <li><a href="{{ url_for('about')}}" style="color: #4a4343;">About</a></li>
-                <li><a href="#" style="color: #4a4343;">Contact</a></li>
+                <li><a href="{{ url_for('contact')}}" style="color: #4a4343;">Contact</a></li>
             </ul>
             <div class="search">
                 <ul class="menu">
@@ -90,7 +90,7 @@
                     <li><a href="{{ url_for('index')}}">Home</a></li>
                     <li><a href="{{ url_for('about')}}">About</a></li>
                     <li><a href="#">Checkup</a></li>
-                    <li><a href="#">Contact us</a></li>
+                    <li><a href="{{ url_for('contact')}}">Contact us</a></li>
                 </ul>
             </div>
             <!--**link-box***-->
@@ -117,7 +117,7 @@
 
         <!--**bottom**********************-->
         <div class="footer-bottom">
-            <span class="footer-owner">Made By DeveloperArya</span>
+            <span class="footer-owner">Made By DP System</span>
             <span class="copyright">&#169; Copyright 2024 - DP System</span>
         </div>
     </footer>
