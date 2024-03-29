@@ -21,31 +21,9 @@
     <div class="sidebar">
         <div class="logo-details">
             <i class='bx bxs-dashboard'></i>
-            <span class="logo_name"><a href="/" style="text-decoration: none; color: #363451;">DP System</a></span>
+            <span class="logo_name">DP System</span>
         </div>
         <ul class="nav-links">
-            <li>
-                <a href="#" style="background: #8b98a9">
-                    <i class='bx bxs-grid-alt'></i>
-                    <span class="link_name">Dashboard</span>
-                </a>
-                <ul class="sub-menu blank">
-                    <li><a href="#" class="link_name">School Profile</a></li>
-                </ul>
-            </li>
-            <li>
-                <div class="icon-link">
-                    <a href="#">
-                        <i class='bx bxs-user-account'></i>
-                        <span class="link_name">User Profile</span>
-                    </a>
-                    <!-- <i class='bx bx-chevron-down arrow'></i> -->
-                </div>
-                <ul class="sub-menu">
-                    <li><a href="#" class="link_name">Profile</a></li>
-                    <li><a href="#" class="link_name">Visit Website</a></li>
-                </ul>
-            </li>
             <li>
                 <a href="{{ url_for('dashboard')}}">
                     <i class="fa-solid fa-virus"></i>
@@ -64,12 +42,60 @@
                     <li><a href="#" class="link_name">Analytics</a></li>
                 </ul>
             </li>
+            <li>
+                <a href="{{ url_for('liver')}}">
+                    <i class="fa-solid fa-virus"></i>
+                    <span class="link_name">Liver Prediction</span>
+                </a>
+                <ul class="sub-menu blank">
+                    <li><a href="#" class="link_name">Analytics</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="{{ url_for('eye')}}">
+                    <i class="fa-solid fa-eye"></i>
+                    <span class="link_name">Eye Prediction</span>
+                </a>
+                <ul class="sub-menu blank">
+                    <li><a href="#" class="link_name">Analytics</a></li>
+                </ul>
+            </li>
+            <li>
+                <form method="post" action="action.jsp">
+                    <div class="profile-details">
+                        <div class="profile-content">
+                            <img src="/static/favicon.png" alt="profile-img">
+                        </div>
+
+                        <div class="user-degination">
+                            <div class="user-name">Arya Swar.</div>
+                            <div class="user-job">User Account</div>
+                        </div>
+                        <button name="btn" value="logout" style="border: none; background: #8b98a9;"><i
+                                class='bx bx-log-out'></i></button>
+                    </div>
+                </form>
+            </li>
         </ul>
     </div>
 
     <div class="maincontent">
         <section class="home-section">
-
+            <div class="home-content">
+                <i class='bx bx-menu-alt-left'></i>
+                <!-- <span class="text">
+				Sidebar Dashboard 
+			</span> -->
+                <div class="profile">
+                    <div class="profilecontent">
+                        <img src="/static/favicon.png" alt="profile-img">
+                        <div class="user-degination">
+                            <div class="user-name">Arya Swaroop</div>
+                            <div class="user-job">User Account</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <!-- Disease form goes here -->
             <section class="Diabetes1">
                 <!-- <h1>Eye Checkup</h1> -->
@@ -80,6 +106,7 @@
                             style="display: flex; justify-content: space-between; align-items: center; text-align: center; padding: 14px 0px 0px 0px;">
                             <h1 style="font-weight: 600; font-family: serif; color: #11101d;">Diabetes Prediction</h1>
                         </div>
+
                         <form action="action2.jsp" method="post" enctype="multipart/form-data">
                             <div class="form first">
                                 <div class="details ID">

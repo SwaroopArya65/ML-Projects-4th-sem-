@@ -2,265 +2,281 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home page | Safeguard Your Health</title>
-    <link rel="stylesheet" href="/static/CSS/style.css">
-    <link rel="icon" href="/static/favicon.png" type="image/x-icon">
-    <!-- font Awesome for icons-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DP System | Home</title>
+  <link rel="stylesheet" href="/static/CSS/style.css" />
+  <link rel="icon" href="/static/favicon.png" type="image/x-icon" />
+  <!-- font Awesome for icons-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
-    <header>
-        <div class="logo">DP System</div>
-        <ul class="menu">
-            <li><a href="{{ url_for('index')}}">Home</a></li>
-            <li><a href="{{ url_for('about')}}">About</a></li>
-            <li><a href="{{ url_for('contact')}}">Contact</a></li>
+  <header>
+    <div class="logo">DP System</div>
+    <ul class="menu">
+      <li><a href="{{ url_for('index')}}">Home</a></li>
+      <li><a href="{{ url_for('about')}}">About</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+    <div class="search">
+      <ul class="menu">
+        <li><a href="{{ url_for('dashboard')}}">Checkup</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- carousel -->
+  <div class="carousel">
+    <!-- list item -->
+    <div class="list">
+      <div class="item">
+        <img src="/static/image/1.png">
+        <div class="content">
+          <div class="author">DP SYSTEM</div>
+          <div class="title">STAY VIGILANT, STAY WELL .</div>
+          <div class="topic">EYE DETECTION</div>
+          <div class="des">
+            <!-- lorem 50 -->
+            Eye detection systems can help doctors identify and track different health issues,
+            like eye diseases, brain problems, and sleep disorders. They work by spotting unusual
+            movements or patterns in the eyes, which can indicate conditions such as crossed eyes or
+            Parkinson's disease.
+          </div>
+          <div class="buttons">
+            <button><a href="https://www.cdc.gov/visionhealth/basics/ced/index.html">SEE MORE</a></button>
+            <button>CHECKUP</button>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <img src="/static/image/1.1.png">
+        <div class="content">
+          <div class="author">DP SYSTEM</div>
+          <div class="title">STAY AHEAD, STAY HEALTHY</div>
+          <div class="topic">LIVER CHECKUP</div>
+          <div class="des">
+            A liver disease detection system uses imaging and machine learning to identify liver diseases
+            like h
+            epatitis and cirrhosis. It aids in early diagnosis and treatment, reducing public health burden.
+          </div>
+          <div class="buttons">
+            <button><a href="https://liverfoundation.org/about-your-liver/how-liver-diseases-progress/">SEE
+                MORE</a></button>
+            <button>CHECKUP</button>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <img src="/static/image/7.jpg">
+        <div class="content">
+          <div class="author">DP SYSTEM</div>
+          <div class="title">SPOT IT, STOP IT !</div>
+          <div class="topic">HEART DISEASES</div>
+          <div class="des">
+            A heart disease detection system uses machine learning and medical data to identify
+            cardiovascular risk.It detects conditions like coronary artery disease, heart failure,
+            and arrhythmias, improving outcomes and cutting healthcare costs.
+          </div>
+          <div class="buttons">
+            <button><a href="https://www.cdc.gov/heartdisease/about.htm">SEE MORE</a></button>
+            <button>CHECKUP</button>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <img src="/static/image/2.1.png">
+        <div class="content">
+          <div class="author">DP SYSTEM</div>
+          <div class="title">YOUR HEALTH, YOUR PRIORITY.</div>
+          <div class="topic">DIABETES PROBLEM</div>
+          <div class="des">
+            A diabetes diagnosis system uses machine learning and medical data for accurate detection,
+            prediction,
+            and personalized treatment planning, leading to better outcomes and improved health.
+          </div>
+          <div class="buttons">
+            <button><a href="https://www.cdc.gov/diabetes/basics/index.html">SEE MORE</a></button>
+            <button>CHECKUP</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- list thumnail -->
+    <div class="thumbnail">
+      <div class="item">
+        <img src="/static/image/1.png">
+        <div class="content">
+          <div class="title">
+            EYE PREDICTION
+          </div>
+          <!-- <div class="description">
+                        Description
+                    </div> -->
+        </div>
+      </div>
+      <div class="item">
+        <img src="/static/image/1.1.png" />
+        <div class="content">
+          <div class="title">LIVER PREDICTION</div>
+          <!-- <div class="description">
+                        Description
+                    </div> -->
+        </div>
+      </div>
+      <div class="item">
+        <img src="/static/image/7.jpg" />
+        <div class="content">
+          <div class="title">HEART PREDICTION</div>
+          <!-- <div class="description">
+                        Description
+                    </div> -->
+        </div>
+      </div>
+      <div class="item">
+        <img src="/static/image/2.1.png" />
+        <div class="content">
+          <div class="title">DIABETES PREDICTION</div>
+          <!-- <div class="description">
+                        Description
+                    </div> -->
+        </div>
+      </div>
+    </div>
+    <!-- next prev -->
+
+    <div class="arrows">
+      <button id="prev">
+        << /button>
+          <button id="next">></button>
+    </div>
+    <!-- time running -->
+    <div class="time"></div>
+  </div>
+
+  <!-- Step for Checkup Section -->
+  <div class="checkup-step">
+    <h1>
+      Checkup YourSelf in few Click
+      <div style="
+            height: 4px;
+            width: 77px;
+            background-color: red;
+            border-radius: 2px;
+            margin-top: 5px;
+          "></div>
+    </h1>
+    <div class="step">
+      <div class="checkup-details">
+        <p class="stepcount">Step - 1</p>
+        <h1>Click on Checkup Button</h1>
+        <p class="description">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut sequi,
+          rem magnam nesciunt minima placeat, itaque eum neque officiis unde,
+          eaque optio ratione aliquid assumenda facere ab et quasi ducimus aut
+          doloribus non numquam.
+        </p>
+      </div>
+      <img src="/static/image/11.png" />
+    </div>
+    <div class="step">
+      <img src="/static/image/22.png" />
+      <div class="checkup-details">
+        <p class="stepcount">Step - 2</p>
+        <h1>Click on Checkup Button</h1>
+        <p class="description">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut sequi,
+          rem magnam nesciunt minima placeat, itaque eum neque officiis unde,
+          eaque optio ratione aliquid assumenda facere ab et quasi ducimus aut
+          doloribus non numquam.
+        </p>
+      </div>
+    </div>
+    <div class="step">
+      <div class="checkup-details">
+        <p class="stepcount">Step - 3</p>
+        <h1>Click on Checkup Button</h1>
+        <p class="description">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut sequi,
+          rem magnam nesciunt minima placeat, itaque eum neque officiis unde,
+          eaque optio ratione aliquid assumenda facere ab et quasi ducimus aut
+          doloribus non numquam.
+        </p>
+      </div>
+      <img src="/static/image/11.png" />
+    </div>
+  </div>
+
+  <!--==Subscribe===========================-->
+  <section id="subscribe">
+    <h3>Subscribe For New Updates</h3>
+    <!--subcribe-box-->
+    <form class="subscribe-box">
+      <input type="email" placeholder="Example@gmail.com">
+      <button>Subscribe</button>
+    </form>
+  </section><!--end-->
+
+  <!-- Footer Section start -->
+  <footer>
+    <div class="footer-container">
+      <!--**comoany-box**-->
+      <div class="footer-company-box">
+        <!--logo-->
+        <a href="#" class="logo"><span>DP</span> System</a>
+        <!--details-->
+        <p>DP System provide all the facilites related to HealthCare. As well as give the all support which is
+          required a patient.</p>
+        <!--social-box-->
+        <div class="footer-social">
+          <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+      </div>
+      <!--**link-box***-->
+      <div class="footer-link-box">
+        <strong>Main Link's</strong>
+        <ul>
+          <li><a href="{{ url_for('index')}}">Home</a></li>
+          <li><a href="{{ url_for('about')}}">About</a></li>
+          <li><a href="{{ url_for('dashboard')}}">Checkup</a></li>
+          <li><a href="#">Contact us</a></li>
         </ul>
-        <div class="search">
-            <ul class="menu">
-                <li><a href="{{ url_for('dashboard')}}">Checkup</a></li>
-            </ul>
-        </div>
-    </header>
-
-    <!-- carousel -->
-    <div class="carousel">
-        <!-- list item -->
-        <div class="list">
-            <div class="item">
-                <img src="/static/image/1.png">
-                <div class="content">
-                    <div class="author">DP SYSTEM</div>
-                    <div class="title">STAY VIGILANT, STAY WELL .</div>
-                    <div class="topic">EYE DETECTION</div>
-                    <div class="des">
-                        <!-- lorem 50 -->
-                        Eye detection systems can help doctors identify and track different health issues,
-                        like eye diseases, brain problems, and sleep disorders. They work by spotting unusual
-                        movements or patterns in the eyes, which can indicate conditions such as crossed eyes or
-                        Parkinson's disease.
-                    </div>
-                    <div class="buttons">
-                        <button><a href="https://www.cdc.gov/visionhealth/basics/ced/index.html">SEE MORE</a></button>
-                        <button><a href="{{ url_for('dashboard')}}" style="color: white;">CHECKUP</a></button>
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <img src="/static/image/1.1.png">
-                <div class="content">
-                    <div class="author">DP SYSTEM</div>
-                    <div class="title">STAY AHEAD, STAY HEALTHY</div>
-                    <div class="topic">LIVER CHECKUP</div>
-                    <div class="des">
-                        A liver disease detection system uses imaging and machine learning to identify liver diseases
-                        like h
-                        epatitis and cirrhosis. It aids in early diagnosis and treatment, reducing public health burden.
-                    </div>
-                    <div class="buttons">
-                        <button><a href="https://liverfoundation.org/about-your-liver/how-liver-diseases-progress/">SEE
-                                MORE</a></button>
-                        <button><a href="{{ url_for('dashboard')}}" style="color: white;">CHECKUP</a></button>
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <img src="/static/image/7.jpg">
-                <div class="content">
-                    <div class="author">DP SYSTEM</div>
-                    <div class="title">SPOT IT, STOP IT !</div>
-                    <div class="topic">HEART DISEASES</div>
-                    <div class="des">
-                        A heart disease detection system uses machine learning and medical data to identify
-                        cardiovascular risk.It detects conditions like coronary artery disease, heart failure,
-                        and arrhythmias, improving outcomes and cutting healthcare costs.
-                    </div>
-                    <div class="buttons">
-                        <button><a href="https://www.cdc.gov/heartdisease/about.htm">SEE MORE</a></button>
-                        <button><a href="{{ url_for('dashboard')}}" style="color: white;">CHECKUP</a></button>
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <img src="/static/image/2.1.png">
-                <div class="content">
-                    <div class="author">DP SYSTEM</div>
-                    <div class="title">YOUR HEALTH, YOUR PRIORITY.</div>
-                    <div class="topic">DIABETES PROBLEM</div>
-                    <div class="des">
-                        A diabetes diagnosis system uses machine learning and medical data for accurate detection,
-                        prediction,
-                        and personalized treatment planning, leading to better outcomes and improved health.
-                    </div>
-                    <div class="buttons">
-                        <button><a href="https://www.cdc.gov/diabetes/basics/index.html">SEE MORE</a></button>
-                        <button><a href="{{ url_for('dashboard')}}" style="color: white;">CHECKUP</a></button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- list thumnail -->
-        <div class="thumbnail">
-            <div class="item">
-                <img src="/static/image/1.png">
-                <div class="content">
-                    <div class="title">
-                        EYE PREDICTION
-                    </div>
-                    <!-- <div class="description">
-                        Description
-                    </div> -->
-                </div>
-            </div>
-            <div class="item">
-                <img src="/static/image/1.1.png">
-                <div class="content">
-                    <div class="title">
-                        LIVER PREDICTION
-                    </div>
-                    <!-- <div class="description">
-                        Description
-                    </div> -->
-                </div>
-            </div>
-            <div class="item">
-                <img src="/static/image/7.jpg">
-                <div class="content">
-                    <div class="title">
-                        HEART PREDICTION
-                    </div>
-                    <!-- <div class="description">
-                        Description
-                    </div> -->
-                </div>
-            </div>
-            <div class="item">
-                <img src="/static/image/2.1.png">
-                <div class="content">
-                    <div class="title">
-                        DIABETES PREDICTION
-                    </div>
-                    <!-- <div class="description">
-                        Description
-                    </div> -->
-                </div>
-            </div>
-        </div>
-        <!-- next prev -->
-
-        <div class="arrows">
-            <button id="prev">
-                < </button>
-                    <button id="next">></button>
-        </div>
-        <!-- time running -->
-        <div class="time"></div>
+      </div>
+      <!--**link-box***-->
+      <div class="footer-link-box">
+        <strong>Quick Link's</strong>
+        <ul>
+          <li><a href="#">Get Medicine's</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <!-- <li><a href="#">Disclaimer</a></li> -->
+          <li><a href="#">Trem's and Condition's</a></li>
+        </ul>
+      </div>
+      <!--**link-box***-->
+      <div class="footer-link-box">
+        <strong>External Link's</strong>
+        <ul>
+          <li><a href="#">Neurology Services</a></li>
+          <li><a href="#">Cardiology Service</a></li>
+          <li><a href="#">X-ray & RIM Services</a></li>
+          <li><a href="#">Orthopaedics Services</a></li>
+        </ul>
+      </div>
     </div>
 
-    <!-- Step for Checkup Section -->
-    <div class="checkup-step">
-        <h1>Checkup YourSelf in few Click <div
-                style="height: 4px; width: 77px; background-color: red; border-radius: 2px; margin-top: 5px;"></div>
-        </h1>
-        <div class="step">
-            <div class="checkup-details">
-                <p class="stepcount">Step - 1</p>
-                <h1>Click on Checkup Button</h1>
-                <p class="description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut sequi, rem magnam
-                    nesciunt minima
-                    placeat, itaque eum neque officiis unde, eaque optio ratione aliquid assumenda facere ab et
-                    quasi ducimus aut doloribus non numquam.</p>
-            </div>
-            <img src="/static/image/11.png">
-        </div>
-        <div class="step">
-            <img src="/static/image/22.png">
-            <div class="checkup-details">
-                <p class="stepcount">Step - 2</p>
-                <h1>Click on Checkup Button</h1>
-                <p class="description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut sequi, rem magnam
-                    nesciunt minima
-                    placeat, itaque eum neque officiis unde, eaque optio ratione aliquid assumenda facere ab et
-                    quasi ducimus aut doloribus non numquam.</p>
-            </div>
-        </div>
-        <div class="step">
-            <div class="checkup-details">
-                <p class="stepcount">Step - 3</p>
-                <h1>Click on Checkup Button</h1>
-                <p class="description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut sequi, rem magnam
-                    nesciunt minima
-                    placeat, itaque eum neque officiis unde, eaque optio ratione aliquid assumenda facere ab et
-                    quasi ducimus aut doloribus non numquam.</p>
-            </div>
-            <img src="/static/image/11.png">
-        </div>
+    <!--**bottom**********************-->
+    <div class="footer-bottom">
+      <span class="footer-owner">Made By DeveloperArya</span>
+      <span class="copyright">&#169; Copyright 2024 - DP System</span>
     </div>
+  </footer>
 
-    <!-- Footer Section start -->
-    <footer>
-        <hr>
-        <div class="footer-container">
-            <!--**comoany-box**-->
-            <div class="footer-company-box">
-                <!--logo-->
-                <a href="#" class="logo"><span>DP</span> System</a>
-                <!--details-->
-                <p>DP System provide all the facilites related to HealthCare. As well as give the all support which is
-                    required a patient.</p>
-                <!--social-box-->
-                <div class="footer-social">
-                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
-                </div>
-            </div>
-            <!--**link-box***-->
-            <div class="footer-link-box">
-                <strong>Main Link's</strong>
-                <ul>
-                    <li><a href="{{ url_for('index')}}">Home</a></li>
-                    <li><a href="{{ url_for('about')}}">About</a></li>
-                    <li><a href="{{ url_for('dashboard')}}">Checkup</a></li>
-                    <li><a href="{{ url_for('contact')}}">Contact us</a></li>
-                </ul>
-            </div>
-            <!--**link-box***-->
-            <div class="footer-link-box">
-                <strong>Quick Link's</strong>
-                <ul>
-                    <li><a href="#">Get Medicine's</a></li>
-                    <li><a href="#">Privacy Policy</a></li>
-                    <!-- <li><a href="#">Disclaimer</a></li> -->
-                    <li><a href="#">Trem's and Condition's</a></li>
-                </ul>
-            </div>
-            <!--**link-box***-->
-            <div class="footer-link-box">
-                <strong>External Link's</strong>
-                <ul>
-                    <li><a href="#">Neurology Services</a></li>
-                    <li><a href="#">Cardiology Service</a></li>
-                    <li><a href="#">X-ray & RIM Services</a></li>
-                    <li><a href="#">Orthopaedics Services</a></li>
-                </ul>
-            </div>
-        </div>
-
-        <!--**bottom**********************-->
-        <div class="footer-bottom">
-            <span class="footer-owner">Made By DP System</span>
-            <span class="copyright">&#169; Copyright 2024 - DP System</span>
-        </div>
-    </footer>
-
-    <script src="/static/js/app.js"></script>
+  <script src="/static/js/app.js"></script>
 </body>
 
 </html>
