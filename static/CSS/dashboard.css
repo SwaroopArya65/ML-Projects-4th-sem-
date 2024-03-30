@@ -99,7 +99,7 @@ body:hover::-webkit-scrollbar-thumb {
 }*/
 
 .sidebar .nav-links {
-    overflow: visible;
+    /* overflow: visible; */
 }
 
 .sidebar .nav-links::-webkit-scrollbar {

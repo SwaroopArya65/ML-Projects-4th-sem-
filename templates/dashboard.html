@@ -25,15 +25,6 @@
         </div>
         <ul class="nav-links">
             <li>
-                <a href="#" style="background: #8b98a9">
-                    <i class='bx bxs-grid-alt'></i>
-                    <span class="link_name">Dashboard</span>
-                </a>
-                <ul class="sub-menu blank">
-                    <li><a href="#" class="link_name">School Profile</a></li>
-                </ul>
-            </li>
-            <li>
                 <a href="{{ url_for('dashboard')}}">
                     <i class="fa-solid fa-virus"></i>
                     <span class="link_name">Diabetes Prediction</span>
@@ -76,61 +67,58 @@
                             <h1 style="font-weight: 600; font-family: serif; color: #11101d;">Diabetes Prediction</h1>
                         </div>
 
-                        <form action="action2.jsp" method="post" enctype="multipart/form-data">
+                        <form action="calculate" method="post">
                             <div class="form first">
                                 <div class="details ID">
                                     <div class="fields">
                                         <div class="input-field">
-                                            <label>Number of Pregnancies</label>
-                                            <input type="text" placeholder="Enter No. of Pregnancies" name="fullname"
+                                            <label for="numberPregnancies">Number of Pregnancies</label>
+                                            <input type="text" placeholder="Enter No. of Pregnancies" name="nop"
                                                 required>
                                         </div>
 
                                         <div class="input-field">
-                                            <label>Glucose Level</label>
-                                            <input type="text" placeholder="Enter Glucose Level" name="fathername"
+                                            <label for="glucoselevel">Glucose Level</label>
+                                            <input type="text" placeholder="Enter Glucose Level" name="gl" required>
+                                        </div>
+
+                                        <div class="input-field">
+                                            <label for="bloodpressure">Blood Pressure value</label>
+                                            <input type="text" placeholder="Enter Blood Pressure value" name="bpv"
                                                 required>
                                         </div>
 
                                         <div class="input-field">
-                                            <label>Blood Pressure value</label>
-                                            <input type="text" placeholder="Enter Blood Pressure value"
-                                                name="mothername" required>
-                                        </div>
-
-                                        <div class="input-field">
-                                            <label>Skin Thickness value</label>
-                                            <input type="text" placeholder="Enter Skin Thickness value" name="section"
+                                            <label for="skinthickness">Skin Thickness value</label>
+                                            <input type="text" placeholder="Enter Skin Thickness value" name="stv"
                                                 required>
                                         </div>
 
                                         <div class="input-field">
-                                            <label>Age of the Person</label>
-                                            <input type="number" placeholder="Enter Person Age" name="gmobile" required>
+                                            <label for="ageperson">Age of the Person</label>
+                                            <input type="text" placeholder="Enter Person Age" name="ap" required>
                                         </div>
 
                                         <div class="input-field">
-                                            <label>Insuline Level</label>
-                                            <input type="text" placeholder="Enter Insuline Level" name="aadhar"
+                                            <label for="insulinelevel">Insuline Level</label>
+                                            <input type="text" placeholder="Enter Insuline Level" name="il" required>
+                                        </div>
+                                        <div class="input-field">
+                                            <label for="bmivalue">BMI value</label>
+                                            <input type="text" placeholder="Enter BMI value" name="bmi" required>
+                                        </div>
+
+                                        <div class="input-field">
+                                            <label for="diabetespedigree">Diabetes Pedigree Function value</label>
+                                            <input type="text" placeholder="Enter Diabetes Pedigree value" name="dp"
                                                 required>
                                         </div>
-                                        <div class="input-field">
-                                            <label>BMI value</label>
-                                            <input type="text" placeholder="Enter BMI value" name="accountnumber"
-                                                required>
-                                        </div>
 
                                         <div class="input-field">
-                                            <label>Diabetes Pedigree Function value</label>
-                                            <input type="text" placeholder="Enter Diabetes Pedigree value"
-                                                name="bankname" required>
+                                            <label for="ageofperson">Age of the Person</label>
+                                            <input type="text" placeholder="Enter Person age" name="aop" required>
                                         </div>
-
-                                        <div class="input-field">
-                                            <label>Age of the Person</label>
-                                            <input type="text" placeholder="Enter Person age" name="bankhname" required>
-                                        </div>
-                                        <button type="submit" name="btn" value="addstudent">Submit
+                                        <button type="submit" value="calculate">Submit
                                             <!-- <span class="btnText">Add Student</span> -->
                                             <i class="uil uil-navigator"></i>
                                         </button>

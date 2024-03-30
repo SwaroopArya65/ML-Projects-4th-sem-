@@ -25,15 +25,6 @@
         </div>
         <ul class="nav-links">
             <li>
-                <a href="#" style="background: #8b98a9">
-                    <i class='bx bxs-grid-alt'></i>
-                    <span class="link_name">Dashboard</span>
-                </a>
-                <ul class="sub-menu blank">
-                    <li><a href="#" class="link_name">School Profile</a></li>
-                </ul>
-            </li>
-            <li>
                 <a href="{{ url_for('dashboard')}}">
                     <i class="fa-solid fa-virus"></i>
                     <span class="link_name">Diabetes Prediction</span>
@@ -81,54 +72,109 @@
                                 <div class="details ID">
                                     <div class="fields">
                                         <div class="input-field">
-                                            <label>Number of Pregnancies</label>
-                                            <input type="text" placeholder="Enter No. of Pregnancies" name="fullname"
+                                            <label>MDVP:Fo(Hz)</label>
+                                            <input type="text" placeholder="Enter MDVP:Fo(Hz)" name="fullname" required>
+                                        </div>
+
+                                        <div class="input-field">
+                                            <label>MDVP:Fhi(Hz)</label>
+                                            <input type="text" placeholder="Enter MDVP:Fhi(Hz)" name="fathername"
                                                 required>
                                         </div>
 
                                         <div class="input-field">
-                                            <label>Glucose Level</label>
-                                            <input type="text" placeholder="Enter Glucose Level" name="fathername"
+                                            <label>MDVP:Flo(Hz)</label>
+                                            <input type="text" placeholder="Enter MDVP:Flo(Hz)" name="mothername"
                                                 required>
                                         </div>
 
                                         <div class="input-field">
-                                            <label>Blood Pressure value</label>
-                                            <input type="text" placeholder="Enter Blood Pressure value"
-                                                name="mothername" required>
-                                        </div>
-
-                                        <div class="input-field">
-                                            <label>Skin Thickness value</label>
-                                            <input type="text" placeholder="Enter Skin Thickness value" name="section"
+                                            <label>MDVP:Jitter(%)</label>
+                                            <input type="text" placeholder="Enter MDVP:Jitter(%)" name="section"
                                                 required>
                                         </div>
 
                                         <div class="input-field">
-                                            <label>Age of the Person</label>
-                                            <input type="number" placeholder="Enter Person Age" name="gmobile" required>
-                                        </div>
-
-                                        <div class="input-field">
-                                            <label>Insuline Level</label>
-                                            <input type="text" placeholder="Enter Insuline Level" name="aadhar"
-                                                required>
-                                        </div>
-                                        <div class="input-field">
-                                            <label>BMI value</label>
-                                            <input type="text" placeholder="Enter BMI value" name="accountnumber"
+                                            <label>MDVP:Jitter(Abs)</label>
+                                            <input type="number" placeholder="Enter MDVP:Jitter(Abs)" name="gmobile"
                                                 required>
                                         </div>
 
                                         <div class="input-field">
-                                            <label>Diabetes Pedigree Function value</label>
-                                            <input type="text" placeholder="Enter Diabetes Pedigree value"
-                                                name="bankname" required>
+                                            <label>MDVP:RAP</label>
+                                            <input type="text" placeholder="Enter MDVP:RAP" name="aadhar" required>
+                                        </div>
+                                        <div class="input-field">
+                                            <label>MDVP:PPQ</label>
+                                            <input type="text" placeholder="Enter MDVP:PPQ" name="accountnumber"
+                                                required>
                                         </div>
 
                                         <div class="input-field">
-                                            <label>Age of the Person</label>
-                                            <input type="text" placeholder="Enter Person age" name="bankhname" required>
+                                            <label>Jitter:DDP</label>
+                                            <input type="text" placeholder="Enter Jitter:DDP" name="bankname" required>
+                                        </div>
+
+                                        <div class="input-field">
+                                            <label>MDVP:Shimmer</label>
+                                            <input type="text" placeholder="Enter MDVP:Shimmer" name="bankhname"
+                                                required>
+                                        </div>
+                                        <div class="input-field">
+                                            <label>MDVP:Shimmer(dB)</label>
+                                            <input type="text" placeholder="Enter MDVP:Shimmer(dB)" name="bankhname"
+                                                required>
+                                        </div>
+                                        <div class="input-field">
+                                            <label>Shimmer:APQ3</label>
+                                            <input type="text" placeholder="Enter Shimmer:APQ3" name="bankhname"
+                                                required>
+                                        </div>
+                                        <div class="input-field">
+                                            <label>Shimmer:APQ5</label>
+                                            <input type="text" placeholder="Enter Shimmer:APQ5" name="bankhname"
+                                                required>
+                                        </div>
+                                        <div class="input-field">
+                                            <label>MDVP:APQ</label>
+                                            <input type="text" placeholder="Enter MDVP:APQ" name="bankhname" required>
+                                        </div>
+                                        <div class="input-field">
+                                            <label>Shimmer:DDA</label>
+                                            <input type="text" placeholder="Enter Shimmer:DDA" name="bankhname"
+                                                required>
+                                        </div>
+                                        <div class="input-field">
+                                            <label>NHR</label>
+                                            <input type="text" placeholder="Enter NHR" name="bankhname" required>
+                                        </div>
+                                        <div class="input-field">
+                                            <label>HNR</label>
+                                            <input type="text" placeholder="Enter HNR" name="bankhname" required>
+                                        </div>
+                                        <div class="input-field">
+                                            <label>RPDF</label>
+                                            <input type="text" placeholder="Enter RPDF" name="bankhname" required>
+                                        </div>
+                                        <div class="input-field">
+                                            <label>DFA</label>
+                                            <input type="text" placeholder="Enter DFA" name="bankhname" required>
+                                        </div>
+                                        <div class="input-field">
+                                            <label>spread1</label>
+                                            <input type="text" placeholder="Enter spread1" name="bankhname" required>
+                                        </div>
+                                        <div class="input-field">
+                                            <label>spread2</label>
+                                            <input type="text" placeholder="Enter spread2" name="bankhname" required>
+                                        </div>
+                                        <div class="input-field">
+                                            <label>D2</label>
+                                            <input type="text" placeholder="Enter d2" name="bankhname" required>
+                                        </div>
+                                        <div class="input-field">
+                                            <label>PPE</label>
+                                            <input type="text" placeholder="Enter PPE" name="bankhname" required>
                                         </div>
                                         <button type="submit" name="btn" value="addstudent">Submit
                                             <!-- <span class="btnText">Add Student</span> -->
